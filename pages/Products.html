@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aayush Shrestha" />
+    <meta
+      name="keywords"
+      content="Printers for Sale, Buy Printers Online, High-Quality Printers, Affordable Printers, Best Home Printers, Office Printers, Inkjet Printers, Laser Printers, Wireless Printers, Color Printers, Multifunction Printers, Photo Printers, 3D Printers, Printer Deals, Printer Discounts"
+    />
+    <meta
+      name="description"
+      content="Explore our store, where we provide the most high tech quality printer for your everyday printing needs"
+    />
+    <!-- title of the page -->
+    <title>Products</title>
+    <!-- linking the stylesheet -->
+    <link rel="stylesheet" href="../css/Style.css" />
+    <!-- linking the script -->
+    <script src="../javaScript/ProductsScript.js"></script>
+    <style>
+      /* To make the items align in center of the body  */
+      body {
+        align-items: center;
+        background-color: #edeaea;
+      }
+      /* To style the product container */
+      .productContainer {
+        margin: auto;
+        padding: 0 20px;
+        max-width: 1000px;
+        width: 100%;
+        text-align: center;
+      }
+      /* To style the table that contains the products */
+      .productTable {
+        width: 100%;
+        border-spacing: 10px;
+      }
+      /* To style the product cards */
+      .productCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        border: 1px solid #b7b7b7;
+        background-color: rgba(255, 255, 255, 0.77);
+        border-radius: 15px;
+        transition: 0.5s;
+        height: 330px;
+      }
+      /* Tp style the image inside the product card */
+      .productCard img {
+        max-width: 80%;
+      }
+      /* To make button present in the product card cone in the middle */
+      .productCard button {
+        margin-top: auto;
+      }
+      /* To style all the buttons present in the product page */
+      button {
+        background-color: rgb(239, 100, 100);
+        color: white;
+        padding: 10px 45px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      /* To make the buttons change colour on hover */
+      button:hover {
+        background-color: red;
+      }
+      /* To Style the buy button */
+      .buy {
+        width: 200px;
+        padding: 20px;
+        border-radius: 33px;
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+      /* To make the product card larger on hover */
+      .productCard:hover {
+        transform: scale(1.06);
+        border: 2px solid black;
+      }
+      /* To make the paragraph inside the product card seperated */
+      .productCard p {
+        margin: 8px;
+      }
+      /* To make some gyap on top and bottom of product detail container*/
+      .productDetailContainer {
+        margin-bottom: 70px;
+        margin-top: 40px;
+      }
+      /* To style the product detail */
+      .productDetail {
+        display: none;
+        padding: 25px;
+        background-color: white;
+        max-width: 1000px;
+        margin: auto;
+        border-radius: 8px;
+      }
+      /* To style the images div inside the product detail */
+      .images {
+        flex: 35%;
+      }
+      /* To  Style the image inside the product detail card*/
+      .images img {
+        max-width: 400px;
+      }
+      /* To style the details div inside the product detail */
+      .details {
+        flex: 65%;
+        margin-left: 40px;
+        text-align: center;
+        margin-top: 65px;
+      }
+      /* To style the ul inside the product detail */
+      .details ul {
+        margin-bottom: 20px;
+      }
+      /* To style the back button */
+      .back {
+        font-size: 18px;
+        text-decoration: none;
+        border-radius: 9px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navigation bar starts -->
+    <nav>
+      <!-- division created for logo -->
+      <div class="logo">
+        <a href="../Index.html"><img src="../images/logo.png" alt="logo" /></a>
+      </div>
+      <!-- division created for links to other pages -->
+      <div class="menuItems">
+        <a href="../Index.html">Home</a>
+        <a href="./Blog.html">Blog</a>
+        <a href="./Products.html" id="active">Products</a>
+        <a href="./Research.html">Research</a>
+        <a href="./Aboutus.html">About Us</a>
+      </div>
+      <!-- div created for search bar -->
+      <div class="searchBar">
+        <input
+          type="text"
+          name="Search"
+          id="searchBar"
+          placeholder="Search here.."
+        />
+        <button>Search</button>
+      </div>
+    </nav>
+    <!-- end of navigation bar and start of product container -->
+    <div class="productContainer" id="container">
+      <div class="heading">
+        <h1 style="color: black; margin: 30px 0px; font-size: 50px" id="head">
+          Our products
+        </h1>
+      </div>
+      <!-- table that contains all the products  -->
+      <table class="productTable">
+        <tr>
+          <td>
+            <!-- division created for product card -->
+            <div class="productCard" id="product1">
+              <img src="../images/products/product1.jpg" alt="product 1" />
+              <p><b>ZKTeco Thermal Printer</b></p>
+              <p><del>Rs.18,000</del></p>
+              <p style="color: green; font-size: 110%"><b>Rs.13,000</b></p>
+              <button class="view" onclick="displayInfo(1)">
+                View Details
+              </button>
+            </div>
+          </td>
+          <td>
+            <!-- division created for product card -->
+            <div class="productCard" id="product2">
+              <img src="../images/products/product2.jpg" alt="product 2" />
+              <p><b>Epson A4+ Inkjet Printer</b></p>
+              <p><b>Rs.86,000</b></p>
+              <button class="view" onclick="displayInfo(2)">
+                View Details
+              </button>
+            </div>
+          </td>
+          <td>
+            <!-- division created for product card -->
+            <div class="productCard" id="product3">
+              <img src="../images/products/product3.jpg" alt="product 3" />
+              <p><b>Konica bizhub Printer</b></p>
+              <p><b>Rs.79,000</b></p>
+              <button class="view" onclick="displayInfo(3)">
+                View Details
+              </button>
+            </div>
+          </td>
+          <td>
+            <!-- division created for product card -->
+            <div class="productCard" id="product4">
+              <img src="../images/products/product4.jpg" alt="product 4" />
+              <p><b>CANON LBP</b></p>
+              <p><b>Rs.28,000</b></p>
+              <button class="view" onclick="displayInfo(4)">
+                View Details
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- division created for product card -->
+            <div class="productCard" id="product5">
+              <img src="../images/products/product5.jpeg" alt="product 5" />
+              <p><b>Brother 3-in-1 Laser Printer</b></p>
+              <p><b>Rs.28,999</b></p>
+              <button class="view" onclick="displayInfo(5)">
+                View Details
+              </button>
+            </div>
+          </td>
+          <td>
+            <!-- division created for product card -->
+            <div class="productCard" id="product6">
+              <img src="../images/products/product6.jpg" alt="product 6" />
+              <p><b>Brother Inkjet Multi-function Printer</b></p>
+              <p><del>Rs.1,28,000</del></p>
+              <p style="color: green; font-size: 110%"><b>Rs.1,10,000</b></p>
+              <button class="view" onclick="displayInfo(6)">
+                View Details
+              </button>
+            </div>
+          </td>
+          <td>
+            <!-- division created for product card -->
+            <div class="productCard" id="product7">
+              <img src="../images/products/product7.png" alt="product 7" />
+              <p><b>Canon PIXMA G3010</b></p>
+              <p><b>Rs.27,500</b></p>
+              <button class="view" onclick="displayInfo(7)">
+                View Details
+              </button>
+            </div>
+          </td>
+          <td>
+            <!-- division created for product card -->
+            <div class="productCard" id="product8">
+              <img src="../images/products/product8.jpg" alt="product 8" />
+              <p><b>Brother DCP Inkjet Color Printer</b></p>
+              <p><del>Rs.28,000</del></p>
+              <p style="color: green; font-size: 110%"><b>RS.22,250</b></p>
+              <button class="view" onclick="displayInfo(8)">
+                View Details
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- division created for product card -->
+            <div class="productCard" id="product9">
+              <img src="../images/products/product9.png" alt="product 9" />
+              <p><b>Canon iP2870 Inkjet Printer</b></p>
+              <p><b>Rs.55,000</b></p>
+              <button class="view" onclick="displayInfo(9)">
+                View Details
+              </button>
+            </div>
+          </td>
+          <td>
+            <!-- division created for product card -->
+            <div class="productCard" id="product10">
+              <img src="../images/products/product10.jpg" alt="product 10" />
+              <p><b>Canon LBP2900 Printer</b></p>
+              <p><b>Rs.26,999</b></p>
+              <button class="view" onclick="displayInfo(10)">
+                View Details
+              </button>
+            </div>
+          </td>
+          <td>
+            <!-- division created for product card -->
+            <div class="productCard" id="product11">
+              <img src="../images/products/product11.jpg" alt="product 11" />
+              <p>
+                <b>Kyocera TASKalfa-3253ci Multifunction Printer</b>
+              </p>
+              <p><b>Rs.4,38,000</b></p>
+              <button class="view" onclick="displayInfo(11)">
+                View Details
+              </button>
+            </div>
+          </td>
+          <td>
+            <!-- division created for product card -->
+            <div class="productCard" id="product12">
+              <img src="../images/products/product12.png" alt="product 12" />
+              <p><b>Canon PIXMA TS707 Inkjet Printer</b></p>
+              <p><del>Rs.71,000</del></p>
+              <p style="color: green; font-size: 110%"><b>Rs.66,000</b></p>
+              <button class="view" onclick="displayInfo(12)">
+                View Details
+              </button>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- end of division for product container and start of div for product detail container -->
+    <div class="productDetailContainer">
+      <!-- division created for product detail -->
+      <div class="productDetail" id="productDetail1">
+        <div class="images">
+          <img src="../images/products/product1.jpg" alt="Product 1" />
+        </div>
+        <div class="details">
+          <h1 style="margin-bottom: 25px">ZKTeco Thermal Printer</h1>
+          <ul>
+            <li>High performance thermal receipt printer</li>
+            <li>Auto cutter</li>
+            <li>Good printing quality</li>
+          </ul>
+          <h2><del>Rs.18,000</del></h2>
+          <h2 style="color: green; font-size: 200%">Rs.13,000</h2>
+          <button class="buy" onclick="confirmation()">Buy</button><br />
+          <a href="products.html" class="back">Go back></a>
+        </div>
+      </div>
+      <!-- division created for product detail -->
+      <div class="productDetail" id="productDetail2">
+        <div class="images">
+          <img src="../images/products/product2.jpg" alt="Product 2" />
+        </div>
+        <div class="details">
+          <h1 style="margin-bottom: 25px">Epson A4+ Inkjet Printer</h1>
+          <ul>
+            <li>Prints photo in around 180s</li>
+            <li>Ideal for home and offices</li>
+            <li>Cost-effective</li>
+          </ul>
+          <h2>Rs.86,000</h2>
+          <button class="buy" onclick="confirmation()">Buy</button><br />
+          <a href="products.html" class="back">Go back></a>
+        </div>
+      </div>
+      <!-- division created for product detail -->
+      <div class="productDetail" id="productDetail3">
+        <div class="images">
+          <img src="../images/products/product3.jpg" alt="Product 3" />
+        </div>
+        <div class="details">
+          <h1 style="margin-bottom: 25px">Konica bizhub Printer</h1>
+          <ul>
+            <li>Printer Type: Embedded</li>
+            <li>Print Speed: bizhub 185e: 18 ppm</li>
+            <li>Memory:32 MB (Shared with copier)</li>
+            <li>USB 3.1</li>
+          </ul>
+          <h2>Rs.79,000</h2>
+          <button class="buy" onclick="confirmation()">Buy</button><br />
+          <a href="products.html" class="back">Go back></a>
+        </div>
+      </div>
+      <!-- division created for product detail -->
+      <div class="productDetail" id="productDetail4">
+        <div class="images">
+          <img src="../images/products/product4.jpg" alt="Product 4" />
+        </div>
+        <div class="details">
+          <h1 style="margin-bottom: 25px">CANON LBP</h1>
+          <ul>
+            <li>For home and office</li>
+            <li>Weight: 5 kg</li>
+            <li>Canon Cartridge 400</li>
+          </ul>
+          <h2>Rs.29,000</h2>
+          <button class="buy" onclick="confirmation()">Buy</button><br />
+          <a href="products.html" class="back">Go back></a>
+        </div>
+      </div>
+      <!-- division created for product detail -->
+      <div class="productDetail" id="productDetail5">
+        <div class="images">
+          <img src="../images/products/product5.jpeg" alt="Product 5" />
+        </div>
+        <div class="details">
+          <h1 style="margin-bottom: 25px">Brother 3-in-1 Laser Printer</h1>
+          <p><b>Brother 3-in-1 Laser Printer</b></p>
+          <ul>
+            <li>3 in 1 printer</li>
+            <li>Print, scan and copy with ease</li>
+            <li>Fast printing speed</li>
+          </ul>
+          <h2>Rs.28,999</h2>
+          <button class="buy" onclick="confirmation()">Buy</button><br />
+          <a href="products.html" class="back">Go back></a>
+        </div>
+      </div>
+      <!-- division created for product detail -->
+      <div class="productDetail" id="productDetail6">
+        <div class="images">
+          <img src="../images/products/product6.jpg" alt="Product 6" />
+        </div>
+        <div class="details">
+          <h1 style="margin-bottom: 25px">
+            Brother Inkjet Multi-function Printer
+          </h1>
+          <ul>
+            <li>Efficiency Engineered</li>
+            <li>Wireless & Ethernet Connectivity</li>
+            <li>Low Cost High Resolution Photo Quality</li>
+          </ul>
+          <h2><del>Rs.1,28,000</del></h2>
+          <h2 style="color: green; font-size: 200%">Rs.1,10,000</h2>
+          <button class="buy" onclick="confirmation()">Buy</button><br />
+          <a href="products.html" class="back">Go back></a>
+        </div>
+      </div>
+      <!-- division created for product detail -->
+      <div class="productDetail" id="productDetail7">
+        <div class="images">
+          <img src="../images/products/product7.png" alt="Product 7" />
+        </div>
+        <div class="details">
+          <h1 style="margin-bottom: 25px">Canon PIXMA G3010</h1>
+          <ul>
+            <li>Print, Scan & Copy</li>
+            <li>Designed for high volume printing</li>
+            <li>ISO Standard print speed (A4): 8.8 images per minute</li>
+          </ul>
+          <h2>Rs.27,500</h2>
+          <button class="buy" onclick="confirmation()">Buy</button><br />
+          <a href="products.html" class="back">Go back></a>
+        </div>
+      </div>
+      <!-- division created for product detail -->
+      <div class="productDetail" id="productDetail8">
+        <div class="images">
+          <img src="../images/products/product8.jpg" alt="Product 8" />
+        </div>
+        <div class="details">
+          <h1 style="margin-bottom: 25px">Brother DCP Inkjet Color Printer</h1>
+          <ul>
+            <li>Connectivity - USB, power source: 220 - 240 V</li>
+            <li>Ink Color: Black, Blue, Red and Yellow</li>
+            <li>Print Speed - 28 ppm</li>
+          </ul>
+          <h2><del>Rs.28,000</del></h2>
+          <h2 style="color: green; font-size: 200%">RS.22,250</h2>
+          <button class="buy" onclick="confirmation()">Buy</button><br />
+          <a href="products.html" class="back">Go back></a>
+        </div>
+      </div>
+      <!-- division created for product detail -->
+      <div class="productDetail" id="productDetail9">
+        <div class="images">
+          <img src="../images/products/product9.png" alt="Product 9" />
+        </div>
+        <div class="details">
+          <h1 style="margin-bottom: 25px">Canon iP2870 Inkjet Printer</h1>
+          <ul>
+            <li>Colour Printer</li>
+            <li>Inkjet Printer</li>
+            <li>Wifi connectivity</li>
+          </ul>
+          <h2>Rs.55,000</h2>
+          <button class="buy" onclick="confirmation()">Buy</button><br />
+          <a href="products.html" class="back">Go back></a>
+        </div>
+      </div>
+      <!-- division created for product detail -->
+      <div class="productDetail" id="productDetail10">
+        <div class="images">
+          <img src="../images/products/product10.jpg" alt="Product 10" />
+        </div>
+        <div class="details">
+          <h1 style="margin-bottom: 25px">Canon LBP2900 Printer</h1>
+          <ul>
+            <li>Brand: Canon</li>
+            <li>Printing Technology: Laser</li>
+            <li>Single Function</li>
+          </ul>
+          <h2>Rs.26,999</h2>
+          <button class="buy" onclick="confirmation()">Buy</button><br />
+          <a href="products.html" class="back">Go back></a>
+        </div>
+      </div>
+      <!-- division created for product detail -->
+      <div class="productDetail" id="productDetail11">
+        <div class="images">
+          <img src="../images/products/product11.jpg" alt="Product 11" />
+        </div>
+        <div class="details">
+          <h1 style="margin-bottom: 25px">
+            Kyocera TASKalfa-3253ci Multifunction Printer
+          </h1>
+          <ul>
+            <li>Copy/Print 32 ppm in Color</li>
+            <li>Heavy duty printing</li>
+            <li>1080p printing resolution</li>
+          </ul>
+          <h2>Rs.4,38,000</h2>
+          <button class="buy" onclick="confirmation()">Buy</button><br />
+          <a href="products.html" class="back">Go back></a>
+        </div>
+      </div>
+      <!-- division created for product detail -->
+      <div class="productDetail" id="productDetail1">
+        <div class="images">
+          <img src="../images/products/product1.jpg" alt="Product 1" />
+        </div>
+        <div class="details">
+          <h1 style="margin-bottom: 25px">Canon PIXMA TS707 Inkjet Printer</h1>
+          <ul>
+            <li>Hi-speed USB 2.0, Wireless, Wired LAN</li>
+            <li>Recommended print volume: 80 to 300 page</li>
+            <li>High performance wireless compact photo printer</li>
+          </ul>
+          <p><del>Rs.71,000</del></p>
+          <p style="color: green; font-size: 110%"><b>Rs.66,000</b></p>
+          <button class="buy" onclick="confirmation()">Buy</button><br />
+          <a href="products.html" class="back">Go back></a>
+        </div>
+      </div>
+      <!-- division created for product detail -->
+      <div class="productDetail" id="productDetail12">
+        <div class="images">
+          <img src="../images/products/product12.png" alt="Product 12" />
+        </div>
+        <div class="details">
+          <h1 style="margin-bottom: 25px">Canon PIXMA TS707 Inkjet Printer</h1>
+          <ul>
+            <li>Hi-speed USB 2.0, Wireless, Wired LAN</li>
+            <li>Recommended print volume: 80 to 300 page</li>
+            <li>High performance wireless compact photo printer</li>
+          </ul>
+          <h2><del>Rs.71,000</del></h2>
+          <h2 style="color: green; font-size: 200%">Rs.66,000</h2>
+          <button class="buy" onclick="confirmation()">Buy</button><br />
+          <a href="products.html" class="back">Go back></a>
+        </div>
+      </div>
+    </div>
+    <!-- end of division for product detail container and start of  footer  -->
+    <footer>
+      <!-- division created for left part of the footer -->
+      <div class="leftColumn">
+        <p style="font-size: 20px">Explore us:</p>
+        <p><a href="../Index.html">Home</a></p>
+        <p><a href="./Blog.html">Blog</a></p>
+        <p><a href="./Products.html">Products</a></p>
+        <p><a href="./Research.html">Research</a></p>
+        <p><a href="./Aboutus.html">About Us</a></p>
+      </div>
+      <!-- division created for the right part of the footer -->
+      <div class="rightColumn">
+        <p style="font-size: 20px">Follow us on:</p>
+        <p>
+          <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </p>
+        <p>
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </p>
+        <p>
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </p>
+      </div>
+      <div class="copyright">
+        <hr />
+        <p>&copy; 2024 Printer.np. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- end of footer -->
+  </body>
+</html>

@@ -1,0 +1,99 @@
+/* To style everything in the html */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Arial", sans-serif;
+  }
+  /* To style the logo image */
+  .logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  /* to style the navigation bar */
+  nav {
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+  }
+  /* To style the items of the menu of navigation bar */
+  .menuItems {
+    display: inline;
+    margin-top: 20px;
+  }
+
+  /* To style the links of the menu of navigation bar */
+  .menuItems a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    color: rgb(3, 186, 186);
+  }
+  /* to style the menu items on over */
+  .menuItems a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 2px;
+    padding: 20px;
+    transition-duration: 0.8s;
+  }
+
+  /* to style the active page in the menu in navigation bar */
+  #active {
+    color: aqua;
+    background-color: #1e1e1e;
+  }
+
+  /* to style the search bar */
+  .searchBar {
+    margin-top: 10px;
+  }
+  /* to style the search bar input area */
+  .searchBar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: black;
+  }
+  /* to style the search button */
+  .searchBar button {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3d3a3a;
+    color: #fff;
+    margin-left: 8px;
+  }
+  /* css for footer */
+  footer {
+    background-color: black;
+    color: #ffffff96;
+    text-align: center;
+    padding: 5px;
+  }
+  /* to style the p tags present in footer */
+  footer p {
+    margin: 15px;
+  }
+  /* to style the links present in the footer */
+  footer a {
+    text-decoration: none;
+    color: #ffffff96;
+  }
+  /* to style the left column of footer */
+  .leftColumn {
+    float: left;
+    margin-left: 400px;
+  }
+  /* to style the right column of the footer */
+  .rightColumn {
+    float: right;
+    margin-right: 400px;
+  }
+  /* to clear the flex for the copyright div */
+  .copyright {
+    clear: both;
+  }

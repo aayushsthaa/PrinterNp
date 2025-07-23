@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Utsav Basnyat" />
+    <meta
+      name="keywords"
+      content="Printers for Sale, Buy Printers Online, High-Quality Printers, Affordable Printers, Best Home Printers, Office Printers, Inkjet Printers, Laser Printers, Wireless Printers, Color Printers, Multifunction Printers, Photo Printers, 3D Printers, Printer Deals, Printer Discounts"
+    />
+    <meta
+      name="description"
+      content="Explore our store, where we provide the most high tech quality printer for your everyday printing needs"
+    />
+    <title>About Us</title>
+    <link rel="stylesheet" href="../css/Style.css" />
+    <style>
+      /* Start of CSS for About Us Page */
+      /* CSS for background-image */
+      .main {
+        background-image: url(../images/aboutUs/photo53.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      /* CSS for portfolio */
+      .top-section {
+        height: 120px;
+        background-color: #474e5d;
+        text-align: center;
+        color: white;
+        padding-top: 60px;
+      }
+
+      /* to style the head section */
+      .head {
+        text-align: center;
+        color: black;
+      }
+      /* to style the cards */
+      .card {
+        height: 100px;
+        width: 1400px;
+      }
+      /* to style the empty div */
+      .empty {
+        height: 510px;
+        background-color: #edeaea;
+      }
+      /* to style the image of the team members */
+      .aboutusimg {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+        width: 350px;
+        height: 565px;
+        float: right;
+        margin: 10px;
+        background-color: whitesmoke;
+        text-align: center;
+      }
+      /* to style the container */
+      .container {
+        padding-top: 12px;
+        text-align: center;
+      }
+
+      .title {
+        color: #474e5d;
+      }
+      /* to style the text div */
+      .text {
+        font-family: Arial, sans-serif;
+        font-size: larger;
+      }
+
+      /* CSS for Feed-back form */
+      .feedbackbox {
+        background-color: white;
+        height: 445px;
+        width: 400px;
+        margin-left: 600px;
+        padding: 30px;
+        padding-left: 50px;
+        border-radius: 9px;
+      }
+      /* to style the feedback box */
+      .feedbackbox h2 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      /* to style the button of the feedback form */
+      .button {
+        background-color: #474e5d;
+        color: #fff;
+        width: 70px;
+        padding: 10px;
+      }
+      /* End of CSS for About Us Page */
+    </style>
+  </head>
+  <body>
+    <!-- start of navigation bar -->
+    <nav>
+      <div class="logo">
+        <a href="../Index.html"><img src="../images/logo.png" alt="logo" /></a>
+      </div>
+      <div class="menuItems">
+        <a href="../Index.html">Home</a>
+        <a href="./Blog.html">Blog</a>
+        <a href="./Products.html">Products</a>
+        <a href="./Research.html">Research</a>
+        <a href="./Aboutus.html" id="active">About Us</a>
+      </div>
+      <div class="searchBar">
+        <input
+          type="text"
+          name="Search"
+          id="searchBar"
+          placeholder="Search here.."
+        />
+        <button>Search</button>
+      </div>
+    </nav>
+    <!-- Start of div for background-image -->
+    <div class="main">
+      <!--Start of div for creating form.-->
+      <div class="top-section">
+        <h1>About Us Page</h1>
+      </div>
+      <br />
+      <br />
+      <div class="feedbackbox">
+        <h2>Feedback form</h2>
+        <form name="form1" onsubmit="validate()">
+          <label for="firstname">First Name:</label>
+          <input type="text" placeholder="Enter First Name" name="firstname" />
+          <br />
+          <br />
+          <label for="lastname">Last Name:</label>
+          <input type="text" placeholder="Enter Last Name" name="lastname" />
+          <br />
+          <br />
+          <label for="email" style="margin-right: 37px">Email:</label>
+          <input type="email" placeholder="Enter Email" name="email" />
+          <br />
+          <br />
+          <label for="phone" style="margin-right: 30px">Phone:</label>
+          <input type="phone" placeholder="Enter phone" name="phone" />
+          <br />
+          <br />
+          <label for="gender">Gender:</label>
+          <input type="radio" name="Gender" value="male" />Male
+          <input type="radio" name="Gender" value="female" />Female
+          <br />
+          <br />
+          <label for="message">Message:</label><br />
+          <textarea
+            name="Message"
+            placeholder="Enter your Feedback here...."
+            cols="30"
+            rows="10"
+          ></textarea>
+          <p><input type="Submit" class="button" value="Submit" /></p>
+        </form>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <!--Start of div for first member content.-->
+      <div class="card">
+        <div class="aboutusimg">
+          <img
+            src="../images/aboutUs/photo20.png"
+            alt="Aayush"
+            style="width: 100%"
+          />
+          <div class="container">
+            <h2>Aayush Shrestha</h2>
+            <br />
+            <h2 class="title">Leader</h2>
+            <br />
+            <p class="text">
+              Hello there! I am Aayush Shrestha, Graduated college from Pentagon
+              Intl College. I'm a B.Sc. (hons) Computing student at Islington
+              College, Kathmandu. I enjoy web developing and have basic skills
+              in HTML, CSS and JavaScript.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- div for second memder -->
+      <div class="card">
+        <div class="aboutusimg">
+          <img
+            src="../images/aboutUs/photo40.png"
+            alt="Tulsi"
+            style="width: 100%"
+          />
+          <div class="container">
+            <h2>Tulsi Thakur</h2>
+            <br />
+            <h2 class="title">Member</h2>
+            <br />
+            <p class="text">
+              Hello there ! I am Tulsi Thakur. I Graduated +2 from Kathmandu
+              Model College. I am a B.sc hons computing student at Islington
+              College right now. I enjoy the process and gets satisfaction doing
+              javascrip , java , HTML and CSS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- div for second member -->
+      <div class="card">
+        <div class="aboutusimg">
+          <img
+            src="../images/aboutUs/photo30.png.jpg"
+            alt="Utsav"
+            style="width: 100%"
+          />
+          <div class="container">
+            <h2>Utsav Basnyat</h2>
+            <br />
+            <h2 class="title">Member</h2>
+            <br />
+            <p class="text">
+              Hello there! I am Utsav Basnyat a Siddhartha Vanasthali Institute
+              high school alumnus. I'm a BSc. (hons) Computing student at
+              Islington College, Kathmandu right now. I have a strong interest
+              in web development and I am proficient in HTML, CSS, Javascript,
+              and Java.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--End of div for member content.-->
+
+      <div class="empty">
+        <br />
+        <br />
+        <h1 class="head">OUR TEAM</h1>
+      </div>
+    </div>
+    <!-- End of div for background-image -->
+    <!-- Start of footer -->
+    <footer>
+      <div class="leftColumn">
+        <p style="font-size: 20px">Explore us:</p>
+        <p><a href="../Index.html">Home</a></p>
+        <p><a href="./Blog.html">Blog</a></p>
+        <p><a href="./Products.html">Products</a></p>
+        <p><a href="./Research.html">Research</a></p>
+        <p><a href="./Aboutus.html">About Us</a></p>
+      </div>
+      <div class="rightColumn">
+        <p style="font-size: 20px">Follow us on:</p>
+        <p>
+          <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </p>
+        <p>
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </p>
+        <p>
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </p>
+      </div>
+      <div class="copyright">
+        <hr />
+        <p>&copy; 2024 Printer.np. All rights reserved.</p>
+      </div>
+    </footer>
+    <!--Start of script for form validation-->
+    <script>
+      // function called on submiting the form
+      function validate() {
+        // gets the value of element firstname from form and stores in the variable fname
+        var fname = document.forms["form1"]["firstname"].value;
+        // gets the value of element lastname name from form and stores in the variable lname
+        var lname = document.forms["form1"]["lastname"].value;
+        // gets the value of element email from form and stores in the variable email
+        var email = document.forms["form1"]["email"].value;
+        // gets the value of element phone from form and stores in the variable phone
+        var phone = document.forms["form1"]["phone"].value;
+        // gets the value of element Gender from form and stores in the variable gender
+        var gender = document.forms["form1"]["Gender"].value;
+        // gets the value of element Message from form and stores in the variable message
+        var message = document.forms["form1"]["Message"].value;
+        // Checks if any of the variables are empty
+        if (
+          fname == "" ||
+          lname == "" ||
+          email == "" ||
+          phone == "" ||
+          gender == "" ||
+          message == ""
+        ) {
+          // if any one of  it is empty, it alerts user to fill out every input box
+          alert("Please fill out every input boxes.");
+        } else {
+          // if all arent empty then it'll thank for filling the form
+          alert("Thank you for filling out the Feedback-form.");
+        }
+      }
+    </script>
+    <!--End of script for form validation-->
+  </body>
+</html>
